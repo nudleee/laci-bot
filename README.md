@@ -40,7 +40,7 @@ Lásd bővebben [Attention Is All You Need paper](https://arxiv.org/pdf/1706.037
 ### Labor útravalók:
 
 - prompt engineering hasznos arra, hogy kipróbáljuk a modelt
-- 5-6 shoot után nem igazán javítható prompt engineering-el a model
+- 5-6 shot után nem igazán javítható prompt engineering-el a model
 
 ## 2. Hét
 
@@ -74,3 +74,15 @@ Lásd bővebben [Attention Is All You Need paper](https://arxiv.org/pdf/1706.037
     miért ez az eredmény?
 
 - mikor áll le a training? meddig érdemes futtatni? cpu helyett gpu?
+
+## 3. Hét
+
+### CUDA
+
+A sikeres futtatáshoz korábbi driver-re és másik pytorch-ra volt szükség ez után jelentős időjavulás következett be a fine-tuning során.
+
+20 epoch után már megütötte a few-shot szintet: ![Example](./after_20_epochs.png)
+
+A week 3-ból úgy gondolom a RAG lehet, aminek nagy hasznát veszem a későbbiekben a többi része az anyagnak a projekt szempontjából kevésbé érződött relevánsnak (RLHF).
+
+Ezen kívül a LongChain-es kurzusba is beelkezdtem + Alpha signal-on látott hírek alapján a HuggingChat-et is kipróbáltam.
