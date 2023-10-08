@@ -86,3 +86,9 @@ A sikeres futtatáshoz korábbi driver-re és másik pytorch-ra volt szükség e
 A week 3-ból úgy gondolom a RAG lehet, aminek nagy hasznát veszem a későbbiekben a többi része az anyagnak a projekt szempontjából kevésbé érződött relevánsnak (RLHF).
 
 Ezen kívül a LongChain-es kurzusba is beelkezdtem + Alpha signal-on látott hírek alapján a HuggingChat-et is kipróbáltam.
+
+## 4-5. Hét
+
+### gpt-3.5-turbo és Gradio
+
+A chat with your data kurzusból inspirálódva egy egyszerű, saját dokumentot forrásént használó chatbot készítése a Gradio-t alkalmazva demo-hoz.
