@@ -1,0 +1,36 @@
+Tudnivalók a 2023 évi Szakmai gyakorlat elvégzéséről
+ 
+A szakmai gyakorlat időtartama a villamosmérnöki és mérnökinformatikus alapképzési szakokon 2014 szeptemberében, míg a villamosmérnöki, mérnökinformatikus és gazdaságinformatikus mesterképzési szakokon 2015 januárjában változott. A szakmai gyakorlat csak intézményen (BME-n) kívül végezhető.
+Az időtartamok és a gyakorlat végzésének feltételei a különböző szakokon:
+
+Villamosmérnöki BSc szakon legalább 6 hét (240 munkaóra). A gyakorlat csak olyan gyakorlóhelyen végezhető, mellyel a karnak együttműködési megállapodása van és a hallgatóval hallgatói munkaszerződést köt.
+Mérnökinformatikus BSc szakon 2014 szeptembere előtt kezdett hallgatók esetén legalább 6 hét (240 munkaóra). A gyakorlat csak olyan gyakorlóhelyen végezhető, mellyel a karnak együttműködési megállapodása van és a hallgatóval hallgatói munkaszerződést köt.
+Mérnökinformatikus BSc szakon 2014 szeptemberétől kezdett hallgatók esetén legalább 8 hét (320 munkaóra). A gyakorlat csak olyan gyakorlóhelyen végezhető, mellyel a karnak együttműködési megállapodása van és a hallgatóval hallgatói munkaszerződést köt.
+Villamosmérnöki MSc szakon legalább 4 hét (160 munkaóra). A gyakorlat csak olyan gyakorlóhelyen végezhető, mely a hallgatóval hallgatói munkaszerződést köt. Együttműködési megállapodás megléte a karral nem követelmény, opcionális.
+Egészségügyi mérnöki MSc szakon legalább 4 hét (160 munkaóra). A gyakorlat csak olyan gyakorlóhelyen végezhető, mely a hallgatóval hallgatói munkaszerződést köt. Együttműködési megállapodás megléte a karral nem követelmény, opcionális.
+Mérnökinformatikus MSc szakon 2015 januárja előtt kezdett hallgatók esetén legalább 4 hét (160 munkaóra). A gyakorlat csak olyan gyakorlóhelyen végezhető, mely a hallgatóval hallgatói munkaszerződést köt. Együttműködési megállapodás megléte a karral nem követelmény, opcionális.
+Mérnökinformatikus MSc szakon 2015 januárjától kezdett hallgatók esetén legalább 6 hét (240 munkaóra). A gyakorlat csak olyan gyakorlóhelyen végezhető, mellyel a karnak együttműködési megállapodása van és a hallgatóval hallgatói munkaszerződést köt.
+Gazdaságinformatikus MSc szakon 2015 januárja előtt kezdett hallgatók esetén legalább 4 hét (160 munkaóra). A gyakorlat csak olyan gyakorlóhelyen végezhető, mely a hallgatóval hallgatói munkaszerződést köt. Együttműködési megállapodás megléte a karral nem követelmény, opcionális.
+Gazdaságinformatikus MSc szakon 2015 januárjától kezdett hallgatók esetén legalább 6 hét (240 munkaóra). A gyakorlat csak olyan gyakorlóhelyen végezhető, mellyel a karnak együttműködési megállapodása van és a hallgatóval hallgatói munkaszerződést köt.
+
+ 
+A szakmai gyakorlatra a javasolt kezdési időpont: 2023. július 3. (hétfő). A szakmai gyakorlat szabályzat 5. pontjában foglalt időpontok szerint végezhető. Szorgalmi időszakban maximum heti 20 óra gyakorlati munka végezhető. Tanszékek a heti maximumra ennél szigorúbb követelményeket is szabhatnak.
+A szakmai gyakorlat elfogadásának feltételei:
+
+15-20 oldalas beszámoló a végzett munkáról
+Napi bontású, a külső konzulenssel hitelesített munkanapló
+A külső konzulens által készített értékelő jelentés (5. melléklet)
+
+A szakmai gyakorlat helyszínei és témái a specializációt gondozó tanszék honlapján a félév közepétől megtekinthetők. A tanszéki témákra a tanszéki szakmai gyakorlat felelősnél kell jelentkezni (3.sz. és 4.sz. melléklet) legkésőbb a gyakorlat megkezdése előtt két héttel. A szakmai gyakorlat felelősnél kell jelezni az esetleges nyári kollégiumi igényt is.
+Saját gyakorlóhely esetén, amennyiben a választott gyakorlóhellyel nincs még a karnak együttműködési megállapodása, annak megkötését kérvényezni kell a szabályzat 1.sz. mellékletének benyújtásával. Az 1.sz. mellékletet a kari felelőshöz kell e-mailben benyújtani.
+A gyakorlat elvégzéséhez a Neptunban a specializációnak/ágazatnak megfelelő Szakmai gyakorlat tantárgyat kell felvenni. Nyári gyakorlati munka esetén az őszi félévben. Az őszi szorgalmi időszakon túlnyúló gyakorlat esetén a tavaszi félévben.
+Iskolaszövetkezeten keresztül végzett szakmai gyakorlat feltételei:
+
+A gyakorlat valós helyszínével, a szakmai gyakorlóhellyel együttműködési megállapodása kell, hogy legyen a karnak, ha az adott képzés megköveteli, illetve meg kell kötni, ha nincs.
+Együttműködési megállapodás megkötését a kari felelősnél kell kérvényezni az 1.sz. melléklet leadásával. A leadás előtt mindenképp ellenőrizni kell, hogy nincs-e már a karnak érvényes megállapodása a gyakorlóhellyel.
+A feladatlapot a szakmai gyakorlóhely tölti ki a témaleírással a tanszéki felelős jóváhagyásával, ellenőrzésével, ahogy eddig is; és azt a gyakorlóhely szignózza (nem az iskolaszövetkezet).
+Az igazolólapot a gyakorlat elvégzéséről és a munka értékeléséről a gyakorlóhely tölti ki és szignózza.
+A napi bontású munkanaplót szintén a gyakorlóhely szignózza.
+A munkaszerződést az iskolaszövetkezet köti és a juttatást is az iskolaszövetkezet biztosítja.
+
+Saját gyakorlóhelyen végzendő szakmai gyakorlat (csak villamosmérnöki és egészségügyi mérnöki MSc szakokon) és egyéb problémás esetekben először a kari szakmai gyakorlat felelőshöz (dr. Blázovics László blazovics.laszlo@vik.bme.hu) kell fordulni a gyakorlat megkezdése előtt legalább 1 hónappal. A 2.sz. kérelem (csak villamosmérnöki és egészségügyi mérnöki MSc szakokon) leadásának határideje a nyári időszakra 2023. július 28. A kérelem beküldhető elektronikusan, beszkennelve az aláírt változatot.

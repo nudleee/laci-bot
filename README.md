@@ -92,3 +92,17 @@ Ezen kívül a LongChain-es kurzusba is beelkezdtem + Alpha signal-on látott h�
 ### gpt-3.5-turbo és Gradio
 
 A chat with your data kurzusból inspirálódva egy egyszerű, saját dokumentot forrásént használó chatbot készítése a Gradio-t alkalmazva demo-hoz.
+
+## 6-7. Hét
+
+### Fordítás
+
+Promt engineering után, arra a következtetésre jutottam, hogy kellően jól megfogalmazott kérdés vagy elég kontextus biztosítása a gpt-3.5-turbo modell alkalmazása elegendő további fordító rétegek nélkül is. Ennek néhány pillanatképét a test mappában találjuk.
+
+### RAG
+
+A [szakmai gyakorlat](https://www.aut.bme.hu/SzakmaiGyakorlat/) oldalán található információk .csv, .pdf és .txt formátumokba szervezése és egy olyan chatbot létrehozása, ami az ezekből az adatokból válaszol a témával kapcsolatos kérdésekre (némi easter egg-el). A futtatáshoz szükség van egy venv-re és az alábbi parancs kiadására:
+
+```pyhon
+pip install -r requirements.txt
+```
