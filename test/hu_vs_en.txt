@@ -1,0 +1,17 @@
+What do you say to a dog?
+There is no relevant information in the given portion of the document to answer the question.
+
+How do you train a dog?
+To train a dog, you can use positive reinforcement by rewarding the dog when it does something good and using verbal cues like "Good dog." Similarly, you can use negative reinforcement by giving a verbal cue like "Bad dog" when the dog does something undesirable. Over time, the dog will learn to associate the positive rewards with good behavior and strive to receive more of them while reducing the occurrence of negative behaviors.
+
+Mit mondasz egy kutyának?
+Egy kutyának számos dolgot mondhatunk, például üdvözlést, parancsokat, dicséretet, játékot, érzelmi kifejezéseket és figyelmeztetéseket.
+
+Hogyan lehet egy kutyát edzeni?
+A kutyát úgy lehet edzeni, hogy meghatározzuk, mi számít jó és mi számít rossz viselkedésnek. Ezután a tanulási algoritmus feladata, hogy megtanulja maximalizálni a jutalmakat a jó viselkedésért, és minimalizálni a büntetéseket a rossz viselkedésért.
+
+
+
+
+
+

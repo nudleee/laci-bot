@@ -86,3 +86,23 @@ A sikeres futtatáshoz korábbi driver-re és másik pytorch-ra volt szükség e
 A week 3-ból úgy gondolom a RAG lehet, aminek nagy hasznát veszem a későbbiekben a többi része az anyagnak a projekt szempontjából kevésbé érződött relevánsnak (RLHF).
 
 Ezen kívül a LongChain-es kurzusba is beelkezdtem + Alpha signal-on látott hírek alapján a HuggingChat-et is kipróbáltam.
+
+## 4-5. Hét
+
+### gpt-3.5-turbo és Gradio
+
+A chat with your data kurzusból inspirálódva egy egyszerű, saját dokumentot forrásént használó chatbot készítése a Gradio-t alkalmazva demo-hoz.
+
+## 6-7. Hét
+
+### Fordítás
+
+Promt engineering után, arra a következtetésre jutottam, hogy kellően jól megfogalmazott kérdés vagy elég kontextus biztosítása a gpt-3.5-turbo modell alkalmazása elegendő további fordító rétegek nélkül is. Ennek néhány pillanatképét a test mappában találjuk.
+
+### RAG
+
+A [szakmai gyakorlat](https://www.aut.bme.hu/SzakmaiGyakorlat/) oldalán található információk .csv, .pdf és .txt formátumokba szervezése és egy olyan chatbot létrehozása, ami az ezekből az adatokból válaszol a témával kapcsolatos kérdésekre (némi easter egg-el). A futtatáshoz szükség van egy venv-re és az alábbi parancs kiadására:
+
+```pyhon
+pip install -r requirements.txt
+```
