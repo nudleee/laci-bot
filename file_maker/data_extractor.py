@@ -50,4 +50,11 @@ save_file(info.text.strip(), 'files/practice.txt')
 
 soup = create_soup_from_url('https://www.aut.bme.hu/SzakmaiGyakorlat/')
 info = soup.find('div', {'role': 'main'})
-save_file(info.text.strip(), 'files/aut_practice.txt')
+result_string = ''
+for item in info:
+    text = item.text
+    stripped_lines = [line.strip() for line in text.splitlines() if line.strip()]
+    lines = '\n'.join(stripped_lines)
+    result_string = result_string + lines
+
+save_file(result_string, 'files/aut_practice.txt')
