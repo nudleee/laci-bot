@@ -29,7 +29,7 @@ def load_db():
         txt_docs=txt_loader.load()
         text_splitter = RecursiveCharacterTextSplitter(
             chunk_size = 800,
-            chunk_overlap = 50,
+            chunk_overlap = 100,
             length_function=len,
             is_separator_regex=True,
             separators=["\n\s*\n", "\n\s*", "\n", "\n\n\n\n", "\n\n\t\t"]
@@ -78,7 +78,7 @@ doc_chain = StuffDocumentsChain(llm_chain=llm_chain, document_variable_name='doc
 chain = ConversationalRetrievalChain(
     combine_docs_chain=doc_chain,
     question_generator=question_generator_chain,
-    retriever=vector_db.as_retriever(search_type="mmr", search_kwargs={"fetch_k":10, "k": 5}),
+    retriever=vector_db.as_retriever(search_type="mmr", search_kwargs={"fetch_k":8, "k": 5}),
     memory=memory,
     return_generated_question=True,
     return_source_documents=True,
