@@ -1,0 +1,44 @@
+Szakmai gyakorlat tudnivalókmiből is áll a szakmai gyakorlat
+aktuális teendők
+A 2021-es év nyári szakmai gyakorlata a normális ütemben, a vizsgaidőszak végeztével kezdődik.
+Ha a tavaszi félévben teljesítetted a szakmai gyakorlatot, akkor a szorgalmi időszak végéig töltsd fel a dokumentumokat a
+Témáim oldalon keresztül. Ha nem találod ott a témád, egyeztess a
+tanszéki szakmai gyakorlat felelőssel.
+Ha a nyári időszakban szeretnéd teljesíteni a szakmai gyakorlatot, akkor nézz körül a
+Témák oldalon és válassz egy témát magadnak, mielőtt mások elviszik őket.
+Tárgyfelvételnél mindenki a mintatantervének megfelelő tárgyat vegye fel! lásd. GyIK
+A szakmai gyakorlat időtartama:
+Villamosmérnöki B.Sc. szakon legalább 6 hét (240 munkaóra).
+Mérnökinformatikus B.Sc. szakon 2014. szeptembere előtt kezdett hallgatók esetén legalább 6 hét (240 munkaóra).
+Mérnökinformatikus B.Sc. szakon 2014. szeptemberétől kezdett hallgatók esetén legalább 8 hét (320 munkaóra).
+Villamosmérnöki M.Sc. szakon legalább 4 hét (160 munkaóra).
+Mérnökinformatikus M.Sc. szakon 2015. januárja előtt kezdett hallgatók esetén legalább 4 hét (160 munkaóra).
+Mérnökinformatikus M.Sc. szakon 2015. januárjától kezdett hallgatók esetén legalább 6 hét (240 munkaóra).
+A 6 hetes vagy azt meghaladó időtartamú szakmai gyakorlat esetében kötelező a fogadó szakmai gyakorlóhelynek szerződésben állnia a karral!
+Minden képzésre igaz, hogy a jelenleg hatályos jogszabályok és az egyetem oktatási dékánhelyetteseinek határozata alapján szakmai gyakorlat harmadik, közvetítő félen (iskolaszövetkezet) csak abban az esetben végezhető, amennyiben a tényleges gyakorlóhely igazolja le a hallgató munkáját és mind az iskolaszövetkezet, mind a cég érvényes keretmegállapodással rendelkezik.
+Cégeknek
+A vállalatok számára összeállítottunk egy tájékoztatót, amelyben a szakmai gyakorlattal kapcsolatos legfontosabb információkat foglaltuk össze számukra.
+A mindenkori tanév időbeosztása a KTH oldalán megtaláható.
+hasznos linkek
+Szakmai gyakorlat információk a kari honlapon
+Munkanapló sablon
+tárgy kódok
+2014 szeptembere előtt kezdett BSc-s hallgatóknak:
+VIAUASZ3 - BSc villamosmérnöki szak
+VIAUAS14 - BSc mérnök informatikus szak
+2014 szeptemberében vagy később kezdett BSc-s hallgatóknak:
+VIAUAS01 - BSc villamosmérnöki szak
+VIAUAS00 - BSc mérnök informatikus szak
+2015 februárja előtt kezdett MSc-s hallgatóknak:
+VIAUMSZ7 - MSc villamosmérnöki szak
+VIAUMS02 - MSc mérnök informatikus szak
+2015 februárjában vagy később kezdett MSc-s hallgatóknak:
+VIAUMS01 - MSc villamosmérnöki szak
+VIAUMS00 - MSc mérnök informatikus szak
+Mechatronikai mérnök hallgatóknak
+VIAUM018 - MSc mechatronikai mérnök szak
+tanszéki felelős
+Dr. Blázovics László
+Adjunktus
+QB.222.
+463-1648

@@ -1,0 +1,8 @@
+botbuilder-integration-aiohttp>=4.14.0
+openai==0.28.1
+pandas==2.1.1
+tiktoken==0.5.1
+langchain==0.0.320
+bs4==0.0.1
+chroma-hnswlib==0.7.3
+chromadb==0.4.14
