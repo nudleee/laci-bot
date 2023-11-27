@@ -1,4 +1,4 @@
-from botbuilder.core import ActivityHandler, MessageFactory, TurnContext
+from botbuilder.core import ActivityHandler, TurnContext, ConversationState
 from botbuilder.schema import ChannelAccount
 import os 
 import openai
@@ -11,12 +11,30 @@ from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import  ConversationalRetrievalChain, LLMChain, StuffDocumentsChain
 
+from data_models import ConversationHistory
 
-class EchoBot(ActivityHandler):
-    openai.api_key  = os.environ['OPENAI_API_KEY']
+openai.api_key  = os.environ['OPENAI_API_KEY']
+
+class LaciBot(ActivityHandler):
+    def __init__(self, conversation_state: ConversationState):
+        if conversation_state is None:
+              raise TypeError(
+                    "[LaciBot]: Missing parameter. conversation_state is required but None was given"
+              )         
+        self._conversation_state = conversation_state
+        self.conversation_history_accessor = self._conversation_state.create_property("ConversationHistory")
+        self.persist_directory = 'files/chroma'
+        self.embedding = OpenAIEmbeddings()
+        self.vector_db = self.load_db()
+        self.chain = ConversationalRetrievalChain(
+                combine_docs_chain=self.doc_chain,
+                question_generator=self.question_generator_chain,
+                retriever=self.vector_db.as_retriever(search_type="mmr", search_kwargs={"fetch_k":8, "k": 5}),
+            )        
+        
+
     llm_name = 'gpt-3.5-turbo'
-    persist_directory = 'files/chroma'
-    embedding = OpenAIEmbeddings()
+    llm = ChatOpenAI(model=llm_name, temperature=0.3, request_timeout=120)   
 
     def load_db(self):
         if os.path.exists(self.persist_directory):
@@ -45,10 +63,8 @@ class EchoBot(ActivityHandler):
             vector_db = Chroma.from_documents(documents=data, embedding=self.embedding, persist_directory=self.persist_directory)
             vector_db.persist()
             return vector_db
-
-    vector_db = load_db()
-    memory = ConversationBufferMemory(memory_key='chat_history', return_messages=True, output_key='answer')
-    llm = ChatOpenAI(model=llm_name, temperature=0.3, request_timeout=120)
+        
+   
 
     template = """A BME VIK szakmai gyakorlattal kapcsolatos kérdéseket megválaszoló chatbot vagy. A feladatod, hogy a kérdést alakítsd át az előzmények alapján, hogy értelmes legyen. 
     Ha nem tudsz a szakmai gyakorlatra vonatkozó kérdést előállítani, akkor legyen az új kérdés: "Nem tudok válaszolni".
@@ -76,24 +92,36 @@ class EchoBot(ActivityHandler):
     QA_CHAIN_PROMPT = PromptTemplate(input_variables=['context', 'chat_history', 'documents'],template=qa_template)
     llm_chain = LLMChain(llm=llm, prompt=QA_CHAIN_PROMPT)
     doc_chain = StuffDocumentsChain(llm_chain=llm_chain, document_variable_name='documents',)
-
-    chain = ConversationalRetrievalChain(
-        combine_docs_chain=doc_chain,
-        question_generator=question_generator_chain,
-        retriever=vector_db.as_retriever(search_type="mmr", search_kwargs={"fetch_k":8, "k": 5}),
-        memory=memory,
-        return_generated_question=True,
-        return_source_documents=True,
-    )
+    
+    async def on_turn(self, turn_context: TurnContext):
+            await super().on_turn(turn_context)
+            await self._conversation_state.save_changes(turn_context)
 
     async def on_members_added_activity(
         self, members_added: [ChannelAccount], turn_context: TurnContext
     ):
         for member in members_added:
             if member.id != turn_context.activity.recipient.id:
-                await turn_context.send_activity("Hello and welcome!")
+                await turn_context.send_activity(f"Szia {member.name}! Laci vagyok és a szakmai gyakorlattal kapcsolatos kérdésekre tudok válaszolni!")
 
     async def on_message_activity(self, turn_context: TurnContext):
-        return await turn_context.send_activity(
-            MessageFactory.text(f"Echo: {turn_context.activity.text}")
-        )
+        conversation_history = await self.conversation_history_accessor.get(turn_context, ConversationHistory)   
+
+        if conversation_history._memory is None:        
+            conversation_history._memory=ConversationBufferMemory(memory_key='chat_history', return_messages=True)
+        
+        message = turn_context.activity.text
+        self.chain.memory = conversation_history._memory
+        chat_history = self.chain.memory.load_memory_variables({})['chat_history']
+        result = self.chain({'question': message, 'chat_history': chat_history})
+        print(result)
+        await turn_context.send_activity(result['answer'])
+
+                 
+
+        
+
+        
+    
+
+    
