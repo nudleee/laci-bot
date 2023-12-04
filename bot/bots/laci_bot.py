@@ -15,6 +15,11 @@ from data_models import ConversationHistory
 
 openai.api_key  = os.environ['OPENAI_API_KEY']
 
+if os.name == 'posix':
+    __import__('pysqlite3')
+    import sys
+    sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 class LaciBot(ActivityHandler):
     def __init__(self, conversation_state: ConversationState):
         if conversation_state is None:
@@ -97,13 +102,6 @@ class LaciBot(ActivityHandler):
             await super().on_turn(turn_context)
             await self._conversation_state.save_changes(turn_context)
 
-    async def on_members_added_activity(
-        self, members_added: [ChannelAccount], turn_context: TurnContext
-    ):
-        for member in members_added:
-            if member.id != turn_context.activity.recipient.id:
-                await turn_context.send_activity(f"Szia {member.name}! Laci vagyok és a szakmai gyakorlattal kapcsolatos kérdésekre tudok válaszolni!")
-
     async def on_message_activity(self, turn_context: TurnContext):
         conversation_history = await self.conversation_history_accessor.get(turn_context, ConversationHistory)   
 
@@ -114,7 +112,6 @@ class LaciBot(ActivityHandler):
         self.chain.memory = conversation_history._memory
         chat_history = self.chain.memory.load_memory_variables({})['chat_history']
         result = self.chain({'question': message, 'chat_history': chat_history})
-        print(result)
         await turn_context.send_activity(result['answer'])
 
                  
